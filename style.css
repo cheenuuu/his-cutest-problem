@@ -1,3 +1,4 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* Background Image */
 body {
   height: 100vh;
   background: url("background.jpg") no-repeat center center/cover;
@@ -17,7 +19,7 @@ body {
   overflow: hidden;
 }
 
-/* Dark overlay so text is visible */
+/* Dark overlay for readability */
 body::before {
   content: "";
   position: absolute;
@@ -29,21 +31,24 @@ body::before {
   z-index: 0;
 }
 
-/* Main box */
+/* Main container */
 .container {
   position: relative;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.65);
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 0 20px pink;
+  box-shadow: 0 0 25px pink;
+  backdrop-filter: blur(5px);
 }
 
 h1 {
   margin-bottom: 30px;
   font-size: 28px;
+  text-shadow: 0 0 10px pink;
 }
 
+/* Buttons */
 .buttons button {
   padding: 12px 25px;
   margin: 10px;
@@ -53,12 +58,14 @@ h1 {
   background: pink;
   cursor: pointer;
   transition: 0.3s ease;
+  font-weight: bold;
 }
 
 .buttons button:hover {
   transform: scale(1.1);
   background: hotpink;
   color: white;
+  box-shadow: 0 0 15px hotpink;
 }
 
 /* Popup */
@@ -69,17 +76,18 @@ h1 {
   transform: translate(-50%, -50%) scale(0);
   background: white;
   color: black;
-  padding: 20px;
+  padding: 25px;
   border-radius: 20px;
   text-align: center;
   transition: 0.5s ease;
-  box-shadow: 0 0 30px pink;
+  box-shadow: 0 0 40px pink;
   z-index: 2;
 }
 
 .popup img {
   width: 150px;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .popup.show {
