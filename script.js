@@ -16,7 +16,7 @@ function sayYes() {
     ">
       <h1 style="font-size:50px;">Yeh Ishq Hai 💕</h1>
       <p style="font-size:25px;">From today…</p>
-      <h2 style="font-size:35px;">Sakshaat ❤️ Vaishnavi</h2>
+      <h2 style="font-size:35px;">cheenu ❤️ chikuuu</h2>
       <p style="font-size:20px;">Forever starts now ✨</p>
       <img src="cute-boy-cheek-pinching-his-girlfriend-happy-valentine-cartoon-character-illustration_56104-367.avif" 
            style="width:250px; margin-top:20px; border-radius:15px;">
