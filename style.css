@@ -27,8 +27,8 @@ body::before {
   z-index: 0;
 }
 
-/* Main container */
-.container {
+.container,
+.second-page {
   position: relative;
   z-index: 1;
   background: rgba(0, 0, 0, 0.65);
@@ -38,10 +38,15 @@ body::before {
   backdrop-filter: blur(5px);
 }
 
+/* Hide second page initially */
+.second-page {
+  display: none;
+}
+
 h1 {
   margin-bottom: 30px;
-  font-size: 28px;
-  text-shadow: 0 0 10px pink;
+  font-size: 32px;
+  text-shadow: 0 0 15px pink;
 }
 
 /* Buttons */
@@ -61,7 +66,20 @@ h1 {
   transform: scale(1.1);
   background: hotpink;
   color: white;
-  box-shadow: 0 0 15px hotpink;
+}
+
+/* Image popup */
+.popup-image {
+  width: 300px;
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 0 40px hotpink;
+  transform: scale(0);
+  transition: 0.6s ease;
+}
+
+.popup-image.show {
+  transform: scale(1);
 }
 
 /* Floating hearts */
