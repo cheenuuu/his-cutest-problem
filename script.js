@@ -6,7 +6,7 @@ function sayYes() {
     song.play();
   }
 
-  // Second page content
+  // Change to second page
   document.body.innerHTML = `
     <div style="text-align:center; padding:50px;">
       <h1 style="font-size:40px;">Sakshaat 💖</h1>
